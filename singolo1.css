@@ -1,0 +1,35 @@
+nav {
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+    font-size: 12px;
+    line-height: 6px;
+    color: white;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+.header-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+nav ul :hover {
+    color: #f06c64;
+    
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    
+}
+h1 span {
+    color: #f06c64;
+}
