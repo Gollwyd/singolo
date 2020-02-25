@@ -61,28 +61,42 @@ li span {
     height: 600px;
     background-color: #f06c64;
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: 70px 260px 560px 70px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .phone-block{
     text-align: center;
     margin: 0 auto;
+    height: 485px;
+    width: 240px;
+    position: relative;
+
 }
 .right-phone,
 .phone {
     position: relative;
     z-index: 2;
+    vertical-align: middle;
+
     
 
 }
-.shadow,
-.right-shadow  {
+.right-shadow{
     position: relative;
-    left: 2px;
-    top: -466px;
+    vertical-align: middle;
+    left: 14px;
+    top: -460px;
+}
+.shadow
+  {
+    position: relative;
+    left: 14px;
+    top: -460px;
+    vertical-align: middle;
     
 }
+
 
 
 .services {
@@ -171,9 +185,22 @@ dd {
     word-wrap: break-word;
     
 }
-
+/*
+.phone-block .screen-l {
+    position: relative;
+    vertical-align: middle;
+    left: 14px;
+    top: -460px;
+    overflow: hidden;
+    z-index: 3;
+    border: 2px solid white;
+    
+    
+}
+*/
 .right {
     transform: rotate(180deg); 
+    float:right;
 }
 .right-phone,
 .right-shadow {
@@ -181,11 +208,18 @@ dd {
     
     
 }
-.screen {
-    height: 333;
-    width: 188;
-}
+
 section{
     padding: 59px 40px 0px 40px;
     
+}
+.slider-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+.features-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color:white;
 }
