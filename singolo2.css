@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+    width: 1020px;
+    font-family: "Lato";
+}
+.portfolio {
+    padding: 40px;
+    height: 784px;
+    background-color: #2d303a;
+}
+
+.portfolio-bottom {
+    height: 6px;
+    background-color: #323746;
+}
+.about-us {
+    height: 728px;
+    background-color: #f2f2f2;
+}
+.about-us-bottom {
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.portfolio h2 {
+    
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    text-align: left;
+    padding-top: 30px;
+    
+    
+}
+
+.portfolio p {
+    
+    padding-top: 30px;
+    font-size: 18px;
+    color: #767e9e;
+    font-weight: 300;
+    text-align: left;
+    
+}
+.tags {
+    padding-top: 15px;
+}
+a:link {
+    margin-right: 5px;
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    text-align: left;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 78px;
+    height: 22px;
+    text-decoration: none;
+}
+a:hover {
+    color: #dedede;
+}
+.images {
+    padding-top: 20px;
+    display: grid;
+    grid-template: repeat(3, 187px) / repeat(4, 220px);
+    gap: 20px;
+    justify-content: center;
+}
+.images div {
+    width: 220px;
+    height: 187px;
+    background-position: center;
+    background-size: cover;
+}
+.s {
+    background-image: url(assets/img/s.jpg);
+}
+.o {
+    background-image: url(assets/img/o.jpg);
+}
+.y {
+    background-image: url(assets/img/y.jpg);
+}
+.e {
+    background-image: url(assets/img/e.jpg);
+}
+.a {
+    background-image: url(assets/img/a.jpg);
+}
+.i {
+    background-image: url(assets/img/i.jpg);
+}
+.t {
+    background-image: url(assets/img/t.jpg);
+}
+.w {
+    background-image: url(assets/img/w.jpg);
+}
+.p {
+    background-image: url(assets/img/p.jpg);
+}
+.u {
+    background-image: url(assets/img/u.jpg);
+}
+.r {
+    background-image: url(assets/img/r.jpg);
+}
+.q {
+    background-image: url(assets/img/q.jpg);
+}
+
+.images div img {
+    width: 220px;
+    height: 187px;
+}
