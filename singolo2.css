@@ -18,7 +18,8 @@ body {
     background-color: #323746;
 }
 .about-us {
-    height: 728px;
+    padding: 40px;
+    height: 648px;
     background-color: #f2f2f2;
 }
 .about-us-bottom {
@@ -26,7 +27,7 @@ body {
     background-color: #ffffff;
 }
 
-.portfolio h2 {
+ h2 {
     
     font-size: 30px;
     line-height: 18px;
@@ -38,9 +39,10 @@ body {
     
 }
 
-.portfolio p {
+ p {
     
-    padding-top: 30px;
+    padding-top: 25px;
+    line-height: 30px;
     font-size: 18px;
     color: #767e9e;
     font-weight: 300;
@@ -48,7 +50,7 @@ body {
     
 }
 .tags {
-    padding-top: 15px;
+    padding-top: 10px;
 }
 a:link {
     margin-right: 5px;
@@ -122,4 +124,35 @@ a:hover {
 .images div img {
     width: 220px;
     height: 187px;
+}
+.we div img {
+    width: 300px;
+    height: 300px;
+}
+.we div .media img {
+    width: 33px;
+    height: 35px;
+    padding-right: 4px;
+}
+.we {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    padding-top: 45px;
+}
+h3 {
+    padding-top: 11px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #666d89;
+}
+.we div p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 9px;
+}
+.media {
+    padding-top: 23px;
+    
 }
