@@ -1,3 +1,28 @@
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato'),
+	     url('../assets/fonts/Lato/Lato-Black.ttf') format('truetype');
+	     
+	font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato'),
+	     url('../assets/fonts/Lato/Lato-Light.ttf') format('truetype');
+	     
+	font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato'),
+	     url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+	     
+	font-style: normal;
+    font-weight: 400;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -52,7 +77,7 @@ body {
 .tags {
     padding-top: 10px;
 }
-a:link {
+.tags a:link {
     margin-right: 5px;
     padding: 3px;
     padding-left: 7px;
@@ -68,7 +93,7 @@ a:link {
     height: 22px;
     text-decoration: none;
 }
-a:hover {
+.tags a:hover {
     color: #dedede;
 }
 .images {
@@ -77,6 +102,9 @@ a:hover {
     grid-template: repeat(3, 187px) / repeat(4, 220px);
     gap: 20px;
     justify-content: center;
+    overflow: hidden;
+    height: 611px;
+    
 }
 .images div {
     width: 220px;
@@ -125,26 +153,33 @@ a:hover {
     width: 220px;
     height: 187px;
 }
-.we div img {
+.we div .photo {
     width: 300px;
     height: 300px;
+    
+    overflow: hidden;
 }
 .we div .media img {
     width: 33px;
     height: 35px;
-    padding-right: 4px;
+    margin-right: 4px;
 }
 .we {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    
     gap: 20px;
     padding-top: 45px;
+    
 }
 h3 {
     padding-top: 11px;
     font-size: 18px;
     font-weight: 900;
     color: #666d89;
+    width: 300px;
+    height: 20px;
+    overflow: hidden;
 }
 .we div p {
     font-size: 12px;
@@ -154,5 +189,13 @@ h3 {
 }
 .media {
     padding-top: 23px;
+    
+}
+.media a :hover{
+    background-color: #323746;
+    border-radius: 100%;
+    
+    
+    
     
 }
