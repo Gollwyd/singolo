@@ -28,6 +28,233 @@
     padding: 0;
 }
 
+nav {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 940px;
+    height: 89px;
+    background-color: #2d303a;
+    font-size: 12px;
+    line-height: 6px;
+    color: white;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+
+.header-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+}
+
+nav ul :hover {
+    color: #f06c64;
+    
+}
+nav ul{
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 370px;
+    justify-self: end;
+        
+}
+nav h1 {
+    font-size: 24px;
+    margin-right: auto;
+}
+h1 span {
+    color: #f06c64;
+}
+li span {
+    color: black;
+}
+
+.slider {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 940px;
+    height: 594px;
+    background-color: #f06c64;
+    display: grid;
+    grid-template-columns: 70px 260px 560px 70px;
+    align-items: center;
+    justify-content: center;
+}
+.phone-block{
+    text-align: center;
+    margin: 0 auto;
+    height: 485px;
+    width: 240px;
+    position: relative;
+
+}
+.right-phone,
+.phone {
+    position: relative;
+    z-index: 2;
+    vertical-align: middle;
+
+    
+
+}
+.right-shadow{
+    position: relative;
+    vertical-align: middle;
+    left: 14px;
+    top: -460px;
+}
+.shadow
+  {
+    position: relative;
+    left: 14px;
+    top: -460px;
+    vertical-align: middle;
+    
+}
+
+
+
+.services {
+    width: 1020px;
+    height: 494px;
+    background-color: #f2f2f2;
+}
+
+
+
+dt {
+    font-size: 30px;
+    
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    
+}
+dd {
+    
+    padding-top: 18px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    
+    
+}
+section.features {
+    display: grid;
+    justify-content: space-between;
+    grid-template: repeat(2, 115px) / repeat(3, auto);
+    gap: 10px;
+    padding-top: 43px;
+    
+}
+
+section.features div {
+    display: grid;
+    width: auto;
+    grid-template-areas: 
+    "i t"
+    "i d";
+    justify-content: center;
+    
+    
+    grid-template-rows: auto 120px;
+
+}
+div.icon img {
+    padding-top: 10px;
+}
+div.icon {
+    grid-area: i;
+    width: 55px !important;
+    height: 55px;
+    border-radius: 100%;
+    border: 2px solid #666d89;
+        
+    
+    
+}
+.termin {
+    grid-area: t;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    
+}
+.description {
+    padding-left: 20px;
+    padding-top: 10px;
+    grid-area: d;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    word-wrap: break-word;
+    
+}
+
+.right {
+    transform: rotate(180deg); 
+    float:right;
+}
+.right-phone,
+.right-shadow {
+    transform: rotate(90deg) scale(-1, 1);; 
+    
+    
+}
+
+section {
+    padding: 59px 40px 0px 40px;
+    
+}
+.slider-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+.features-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .portfolio {
     padding: 40px;
     height: 784px;
@@ -48,7 +275,7 @@
     background-color: #ffffff;
 }
 
- h2 {
+ section.portfolio h2 {
     letter-spacing: -0.18px;
     font-size: 30px;
     line-height: 18px;
@@ -59,7 +286,7 @@
     
 }
 
- p {
+section.portfolio p {
     
     padding-top: 25px;
     line-height: 30px;
@@ -188,7 +415,7 @@
     padding-top: 45px;
     
 }
-h3 {
+h3.cont {
     padding-top: 14px;
     font-size: 19px;
     font-weight: 900;
@@ -223,7 +450,7 @@ body {
     width: 1020px;
     font-family: "Lato";
     text-align: left;
-    color: #f0d8d9;
+    color: #767e9e;
 }
 .forma {
     padding: 0px 40px;
@@ -306,7 +533,7 @@ input, textarea {
     display: block;
     border-radius: 5px;
     background-color: #d6564f;
-    color: inherit;
+    color: #f0d8d9;
         
     width: 620px;
     padding: 9px 0;
@@ -334,7 +561,7 @@ aside h3 {
     font-size: 18px;
     line-height: 18px;
     font-weight: 900;
-    color: #f0d8d9;
+    color: #f0d8d9 !important;
     padding-top: 0;
 }
 
