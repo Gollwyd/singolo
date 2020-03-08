@@ -1,1 +1,222 @@
 * { margin: 0; padding: 0; }
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato'),
+	     url('../assets/fonts/Lato/Lato-Black.ttf') format('truetype');
+	     
+	font-style: normal;
+    font-weight: 900;
+}
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato'),
+	     url('../assets/fonts/Lato/Lato-Light.ttf') format('truetype');
+	     
+	font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato'),
+	     url('../assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+	     
+	font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    
+    width: 1020px;
+    font-family: "Lato";
+    text-align: left;
+    color: #f0d8d9;
+}
+.forma {
+    padding: 0px 40px;
+    height: 648px;
+    
+    background-color: #f06c64;
+
+}
+
+.forma h2 {
+    font-size: 30px;
+    line-height: 18px;
+    font-weight: 900; 
+    padding-top: 69px;
+
+}
+.forma p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-top: 26px;
+    text-align: justify;
+
+}
+
+form {
+    
+}
+.pole {
+    width: 620px;
+    display: inline-block;
+    padding-top: 47px;
+    }
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+    
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;  
+    padding-left: 15px;  
+    
+           
+    }
+::-moz-placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left; 
+    padding-left: 15px;
+        
+    }/* Firefox 19+ */
+:-moz-placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left; 
+    padding-left: 15px; 
+    }/* Firefox 18- */
+:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    padding-left: 15px;
+    }
+
+input, textarea {
+    display: block;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: inherit;
+        
+    width: 620px;
+    padding: 9px 0;
+    margin-bottom: 17px;
+    border-style: none;
+    font: inherit;
+}
+textarea {
+    
+    padding-bottom: 18px;
+}
+
+aside {
+    padding-top: 47px;
+    vertical-align: top;
+    width: 280px;
+    display: inline-block;
+    margin-left: 17px;
+    height: 600px;
+
+}
+
+aside h3 {
+    
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+}
+
+aside p.cont-info, .info {
+    font-size: 12px;
+    line-height: 21.5px;
+    font-weight: 400;
+    width: 300px;
+    padding-top: 10px;
+    text-align: justify;
+    hyphens: manual;
+    
+}
+.info {
+    padding-top: 7.5px;
+}
+
+aside p.cont-info {
+    padding-top: 10px;
+    height: 100px;
+}
+
+
+.forma-bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #ea676b;
+}
+
+aside div.info {
+    display: grid;
+    grid-template-columns: 14px auto;
+    column-gap: 9px;
+
+}
+
+div.info div a:link {
+    color:inherit;
+    text-decoration: none;
+}
+div.info div img {
+    display: block;
+    margin: 0 auto;
+    align-self: bottom;
+}
+div.info div {
+    align-self: center;
+    
+}
+
+
+footer {
+    padding: 0px 40px;
+    width: 940px;
+    height: 76px;
+    background-color: #2d303a;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr repeat(4, auto);
+    align-items: center;
+    gap: 6px;
+
+}
+
+footer div {
+    height: 34px;
+}
+footer div a img:hover {
+    background-color: #d6564f;
+    border-radius: 100%;
+    
+    
+    
+    
+}
+footer div p {
+    vertical-align: top;
+    padding-top: 10px;
+    color: #656d89;
+    font-size: 11px;
+    margin-left: 2px;
+    letter-spacing: 0.35px;
+}
