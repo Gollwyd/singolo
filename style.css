@@ -387,10 +387,25 @@ section.portfolio p {
 }
 .about-us h2 {
     padding-top: 28px;
+    letter-spacing: -0.18px;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    text-align: left;
+    
+    
 }
 .about-us p {
     padding-top: 27px;
     letter-spacing: 0.15px;
+
+    
+    line-height: 30px;
+    font-size: 18px;
+    color: #767e9e;
+    font-weight: 300;
+    text-align: left;
 }
 .images div img {
     width: 220px;
@@ -415,7 +430,7 @@ section.portfolio p {
     padding-top: 45px;
     
 }
-h3.cont {
+.we div h3{
     padding-top: 14px;
     font-size: 19px;
     font-weight: 900;
