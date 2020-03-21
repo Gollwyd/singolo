@@ -9,36 +9,48 @@
     <body>
         <header>
             <nav>
-                <h1>Singolo <span>*</span></h1>
-                <ul>
-                    <li>home</li>
-                    <li>services</li>
-                    <li> portfolio</li>
-                    <li> ABOUT</li>
-                    <li>contact</li>
-                </ul>
+                <h1>Singolo </h1>
+                <div>
+                    <a class='link' href="#">home</a>
+                    <a class='link' href="#services">services</a>
+                    <a class='link' href="#portfolio">portfolio</a>
+                    <a class='link' href="#about">ABOUT</a>
+                    <a class='link' href="#contact">contact</a>
+                </div>
             </nav>
             <div class="header-bottom"></div>
             
         </header>
         <main>
             <div class='slider'>
-                <div><a href=""><img src="assets/img/chev.png"></a></div>
-                <div class="phone-block">
-                    <img class="phone" src="assets/img/iphone.png">
-                    <img class="shadow" src="assets/img/shadow.png">
-                    <div class='screen-l'></div>
+                <div class='control left'><img src="assets/img/chev.png"></div>
+                <div class="items-container">
+                    <div class="item active">
+                        <div class='slide'>
+                            <div class="phone-block">
+                                <img class="phone" src="assets/img/iphone.png">
+                                <img class="shadow" src="assets/img/shadow.png">
+                                <div class='screen-l'></div>
+                            </div>
+                            <div class="phone-block">
+                                <img class="right-phone" src="assets/img/iphone.png">
+                                <img class="right-shadow" src="assets/img/shadow.png">
+                                <div class="screen-r"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+
+                    <img src="assets/img/slider-2.jpg" alt="">
+
+                        
+                    </div>
                 </div>
-                <div class="phone-block">
-                    <img class="right-phone" src="assets/img/iphone.png">
-                    <img class="right-shadow" src="assets/img/shadow.png">
-                    <div class="screen-r"></div>
-                </div>
-                <div><a href=""><img class="right" src="assets/img/chev.png"></a></div>
+                <div class='control right'><img class="right" src="assets/img/chev.png"></div>
             </div>
             <div class="slider-bottom"></div>
             <div class="services">
-                <section class="sin1">
+                <section class="sin1" id='services'>
                     <dt>Our Services</dt>
                     <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</dd>
                 </section>
@@ -84,7 +96,7 @@
 
 
         </main>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="tags">
@@ -116,7 +128,7 @@
 
 
 
-        <section class="about-us">
+        <section class="about-us" id="about">
             <h2>About Us</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
                non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
@@ -164,7 +176,7 @@
         </section>
         <div class="about-us-bottom"></div>
 
-        <section class="forma">
+        <section class="forma" id='contact'>
             <h2>Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
@@ -203,6 +215,7 @@
             <div><a href=""><img src="assets/img/google+3.png" alt=""></a></div>
             <div><a href=""><img src="assets/img/twitter3.png" alt=""></a></div>
             <div><a href=""><img src="assets/img/linkedin3.png" alt=""></a></div>
+            <script src="script.js"></script>
         </footer>
 
 

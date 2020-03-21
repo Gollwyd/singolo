@@ -27,6 +27,11 @@
     margin: 0;
     padding: 0;
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
 
 nav {
     padding-left: 40px;
@@ -53,12 +58,16 @@ nav {
     height: 6px;
     background-color: #323746;
 }
-
-nav ul :hover {
-    color: #f06c64;
-    
+nav div a  {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;   
 }
-nav ul{
+a:hover {
+    color: #f06c64;
+}
+
+nav div{
     padding-top: 8px;
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -70,15 +79,16 @@ nav ul{
         
 }
 nav h1 {
+
     font-size: 24px;
     margin-right: auto;
 }
-h1 span {
+nav h1:after {
+    content: '*';
     color: #f06c64;
 }
-li span {
-    color: black;
-}
+
+
 
 .slider {
     padding-left: 40px;
@@ -87,17 +97,20 @@ li span {
     height: 594px;
     background-color: #f06c64;
     display: grid;
-    grid-template-columns: 70px 260px 560px 70px;
+    grid-template-columns: 70px 820px 70px;
     align-items: center;
     justify-content: center;
 }
 .phone-block{
     text-align: center;
-    margin: 0 auto;
+    margin: 0 70px 0 60px;
     height: 485px;
     width: 240px;
     position: relative;
 
+}
+div.slide {
+    display: flex;
 }
 .right-phone,
 .phone {
@@ -108,6 +121,67 @@ li span {
     
 
 }
+.control {
+    cursor: pointer;
+}
+
+.item{
+    display: none;
+    position: relative;
+    animation: 0.5s ease-in-out;
+}
+.active, .next{
+    display: block;
+}
+.next {
+    position: absolute;
+}
+
+.items-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.to-left {
+    animation-name: left;
+  }
+  
+.from-right {
+    animation-name: right;
+  }
+  
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+  }
+  
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+  }
+  @keyframes left {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes right {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+
+
+
+
+
 .right-shadow{
     position: relative;
     vertical-align: middle;
