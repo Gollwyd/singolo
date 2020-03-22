@@ -177,9 +177,21 @@ div.slide {
     }
   }
 
+  .screen-l{
+    position: relative;
+    vertical-align: middle;
+    left: 1px;
+    top: -878px;
+    z-index: 5;
+}
 
-
-
+.screen-r{
+    position: relative;
+    vertical-align: middle;
+    left: -48px;
+    top: -809px;
+    z-index: 5;
+}
 
 
 .right-shadow{

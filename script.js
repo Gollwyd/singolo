@@ -85,7 +85,24 @@ document.querySelector('.control.right').addEventListener('click', function() {
 });
 
 // вкл выкл телефонов
+let scR = 0;
+document.querySelector('.right-phone').addEventListener('click', function(e){
+    if(scR%2==0){
+        document.querySelector('.screen-r').style.display = 'none';
+        
+    }else{
+        document.querySelector('.screen-r').style.display = 'block';
+    }
+    ++scR;
+});
 
-document.querySelectorAll('.phone').addEventListener('click', function(e){
-    e.target.style.display = 'hidden';
+let scL = 0;
+document.querySelector('.phone').addEventListener('click', function(e){
+    if(scL%2==0){
+        document.querySelector('.screen-l').style.display = 'none';
+        
+    }else{
+        document.querySelector('.screen-l').style.display = 'block';
+    }
+    ++scL;
 });
