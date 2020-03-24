@@ -7,11 +7,20 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class = "okno">
+            <p style = "text-align: center;">Письмо отправлено!</p>
+            <p>Тема: <span id='sub'>Singolo </span></p>
+            <p>Описание: <span id='des'>Portfolio project</span></p>
+             
+ 
+            <button id = "ok">Ok</button>
+
+        </div>
         <header>
             <nav>
                 <h1>Singolo </h1>
                 <div>
-                    <a class='link' href="#">home</a>
+                    <a class='link' href="#start">home</a>
                     <a class='link' href="#services">services</a>
                     <a class='link' href="#portfolio">portfolio</a>
                     <a class='link' href="#about">ABOUT</a>
@@ -21,8 +30,8 @@
             <div class="header-bottom"></div>
             
         </header>
-        <main>
-            <div class='slider'>
+        
+            <div class='slider scroll ' id='start'>
                 <div class='control left'><img src="assets/img/chev.png"></div>
                 <div class="items-container">
                     <div class="item active">
@@ -50,8 +59,8 @@
                 <div class='control right'><img class="right" src="assets/img/chev.png"></div>
             </div>
             <div class="slider-bottom"></div>
-            <div class="services">
-                <section class="sin1" id='services'>
+            <div class="services scroll" id='services'>
+                <section class="sin1" >
                     <dt>Our Services</dt>
                     <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</dd>
                 </section>
@@ -96,8 +105,8 @@
 
 
 
-        </main>
-        <section class="portfolio" id="portfolio">
+        
+        <section class="portfolio scroll" id="portfolio">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="tags">
@@ -129,7 +138,7 @@
 
 
 
-        <section class="about-us" id="about">
+        <section class="about-us scroll" id="about">
             <h2>About Us</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
                non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
@@ -176,19 +185,20 @@
 
         </section>
         <div class="about-us-bottom"></div>
+       
 
-        <section class="forma" id='contact'>
+        <section class="forma scroll" id='contact'>
             <h2>Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="pole">
                 <form action="" method="post">
-                    <input type="text" name="username" placeholder="Name (Required)" required>
-                    <input type="email" name="email" placeholder="Email (Required)" required>
-                    <input type="text" name="Subject" placeholder="Subject" required>
-                    <textarea name="description" id="" cols="30" rows="9" required placeholder="Describe your project in detail..."></textarea>
-                    <input type="submit" value="Submit">                
+                    <input type="text" name="username" placeholder="Name (Required)" required class="val">
+                    <input type="email" name="email" placeholder="Email (Required)" required class="val" >
+                    <input type="text" name="Subject" placeholder="Subject" class="val" >
+                    <textarea name="description" class="val" cols="30" rows="9" placeholder="Describe your project in detail..."></textarea>
+                    <input type="submit" value="Submit" id="submit">                
                 </form>
             </div>
             <aside>

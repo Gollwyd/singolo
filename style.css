@@ -32,7 +32,9 @@ header {
     top: 0;
     z-index: 99;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 nav {
     padding-left: 40px;
     padding-right: 40px;
@@ -63,7 +65,7 @@ nav div a  {
     cursor: pointer;
     text-decoration: none;   
 }
-a:hover {
+.active, a:hover {
     color: #f06c64;
 }
 
@@ -385,6 +387,9 @@ section.portfolio p {
 .tags {
     padding-top: 11px;
 }
+.tags a {
+    color:#767e9e;
+}
 .tags a:link {
     margin-right: 5px;
     padding: 3px;
@@ -407,11 +412,12 @@ section.portfolio p {
 .images {
     padding-top: 19px;
     display: grid;
-    grid-template: repeat(3, 187px) / repeat(4, 220px);
+    /*grid-template: repeat(3, 187px) / repeat(4, 220px);*/
     gap: 20px;
     justify-content: center;
     overflow: hidden;
     height: 611px;
+    grid-template-areas:     "a b c d" "e f h i" "j k l m" ;
     
 }
 .images div {
@@ -420,54 +426,73 @@ section.portfolio p {
     
     
 }
+.border{
+    border: 5px solid #F06C64;;
+    padding: -5px;
+    width: 210px !important;
+    height: 177px !important;
+	
+    
+}
 .images div:only-child {
 
 }
 .s {
+    grid-area: a;
     background-position: 45% 22%;
     background-image: url(assets/img/s.jpg);
 }
 .o {
+    grid-area: b;
     background-position: 57% center;
     background-image: url(assets/img/o.jpg);
 }
 .y {
+    grid-area: c;
     background-position: 38% top;
     background-image: url(assets/img/y.jpg);
 }
 .e {
+    grid-area: d;
     background-position: 57% 22%;
     background-image: url(assets/img/e.jpg);
 }
 .a {
+    grid-area: e;
     background-position: 46% 18%;
     background-image: url(assets/img/a.jpg);
 }
 .i {
+    grid-area: f;
     background-position: 41% 55%;
     background-image: url(assets/img/i.jpg);
 }
 .t {
+    grid-area: h;
     background-position: 20.4% 21%;
     background-image: url(assets/img/t.jpg);
 }
 .w {
+    grid-area: i;
     background-position: 41% 35%;
     background-image: url(assets/img/w.jpg);
 }
-.p {
+.p {grid-area: j;
     background-position: 47% 40%;
     background-image: url(assets/img/p.jpg);
 }
 .u {
+    grid-area: k;
     background-position: 55.5% 23.7%;
     background-image: url(assets/img/u.jpg);
 }
 .r {
+    grid-area: l;
     background-position: 74% 77.6%;
     background-image: url(assets/img/r.jpg);
 }
 .q {
+    grid-area: m;
     background-position: 47% 25%;
     background-image: url(assets/img/q.jpg);
 }
@@ -746,4 +771,33 @@ footer div p {
     font-size: 11px;
     margin-left: 2px;
     letter-spacing: 0.35px;
+}
+
+div.okno {
+    position: sticky;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+    padding: 20px;
+    width: 50vw;
+    background-color: khaki;
+    
+    left: 25vw;
+    top: 25vh;
+    
+    
+}
+#submit {
+    cursor: pointer;
+}
+#ok { display: block;
+    border-radius: 5px;
+    background-color: #d6564f;
+    color: #f0d8d9;
+    cursor: pointer;
+    margin: 10px auto 10px auto;
+    padding: 9px 20px;
+    margin-bottom: 17px;
+    border-style: none;
+    font: inherit;
 }
