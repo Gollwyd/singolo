@@ -33,12 +33,13 @@ header {
     z-index: 99;
 }
 html {
+    
     scroll-behavior: smooth;
 }
 nav {
     padding-left: 40px;
     padding-right: 40px;
-    width: 940px;
+    width: auto;
     height: 89px;
     background-color: #2d303a;
     font-size: 12px;
@@ -56,7 +57,7 @@ nav {
 }
 
 .header-bottom {
-    width: 1020px;
+    width: auto;
     height: 6px;
     background-color: #323746;
 }
@@ -69,7 +70,7 @@ nav div a  {
     color: #f06c64;
 }
 
-nav div{
+nav .navig{
     padding-top: 8px;
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -80,12 +81,12 @@ nav div{
     justify-self: end;
         
 }
-nav h1 {
+nav div.sing h1 {
 
     font-size: 24px;
     margin-right: auto;
 }
-nav h1:after {
+nav div.sing h1:after {
     content: '*';
     color: #f06c64;
 }
@@ -95,11 +96,11 @@ nav h1:after {
 .slider {
     padding-left: 40px;
     padding-right: 40px;
-    width: 940px;
+    width: auto;
     height: 594px;
     background-color: #f06c64;
     display: grid;
-    grid-template-columns: 70px 820px 70px;
+    grid-template-columns: 7fr 82fr 7fr;
     align-items: center;
     justify-content: center;
 }
@@ -210,11 +211,17 @@ div.slide {
     vertical-align: middle;
     
 }
+.slider-2{
+    background-image: url(assets/img/slider-2.jpg);
+    background-size: cover;
+    height: 596px;
+    width: auto;
+}
 
 
 
 .services {
-    width: 1020px;
+    width: auto;
     height: 494px;
     background-color: #f2f2f2;
 }
@@ -301,7 +308,7 @@ div.icon {
 }
 
 .right {
-    transform: rotate(180deg); 
+    transform: rotate(270deg); 
     float:right;
 }
 .right-phone,
@@ -311,17 +318,18 @@ div.icon {
     
 }
 
+
 section {
     padding: 59px 40px 0px 40px;
     
 }
 .slider-bottom {
-    width: 1020px;
+    width: auto;
     height: 6px;
     background-color: #ea676b;
 }
 .features-bottom {
-    width: 1020px;
+    width: auto;
     height: 6px;
     background-color:white;
 }
@@ -522,9 +530,20 @@ section.portfolio p {
     width: 220px;
     height: 187px;
 }
+.we div .adam {
+    background-image: url(assets/img/adam.jpg);
+}
+.we div .desmond {
+    background-image: url(assets/img/desmond.jpg);
+}
+.we div .scolara {
+    background-image: url(assets/img/scolara.jpg);
+}
 .we div .photo {
     width: 300px;
     height: 300px;
+    background-size: cover;
+    
     
     overflow: hidden;
 }
@@ -535,7 +554,7 @@ section.portfolio p {
 }
 .we {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     
     gap: 20px;
     padding-top: 45px;
@@ -572,10 +591,10 @@ section.portfolio p {
 }
 
 body {
-    
+    margin: 0 auto !important;
     width: 1020px;
     font-family: "Lato";
-    text-align: left;
+    position: center;
     color: #767e9e;
 }
 .forma {
@@ -595,7 +614,7 @@ body {
 
 }
 .forma p {
-    width: 940px;
+    width: auto;
     height: 57px;
     font-size: 18px;
     line-height: 30px;
@@ -606,11 +625,12 @@ body {
 
 }
 
-form {
-    
+div.pole-aside {
+    display: grid;
+    grid-template-columns: 62fr 28fr;
 }
 .pole {
-    width: 620px;
+    
     display: inline-block;
     padding-top: 47px;
     }
@@ -675,7 +695,7 @@ textarea {
 aside {
     padding-top: 47px;
     vertical-align: top;
-    width: 280px;
+    
     display: inline-block;
     margin-left: 17px;
     height: 600px;
@@ -713,7 +733,7 @@ aside p.cont-info {
 
 
 .forma-bottom {
-    width: 1020px;
+    width: auto;
     height: 6px;
     background-color: #ea676b;
 }
@@ -742,7 +762,7 @@ div.info div {
 
 footer {
     padding: 0px 40px;
-    width: 940px;
+    width: auto;
     height: 76px;
     background-color: #2d303a;
     display: grid;
@@ -800,4 +820,264 @@ div.okno {
     margin-bottom: 17px;
     border-style: none;
     font: inherit;
+}
+.sing img {
+    display: none;
+}
+
+@media (max-width: 1020px) {
+    .slider-2{
+        
+        height: 50vw;
+        
+    }
+    body{
+        width: auto;
+    }
+    .slider {
+        padding-left: 30px;
+        padding-right: 30px;
+        grid-template-columns: 3fr 82fr 3fr;
+        height: 60vw;
+    }
+    
+    .nav {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .items-container {
+        height: 50vw;
+    }
+    
+    
+    
+    .item>img {
+        width: 10vw;
+    }
+    .phone-block {
+        position: relative;
+        margin: 0 5vw;
+        height: auto;
+    }
+    .phone-block>img {
+        position: absolute ;
+        left: 2vw;
+        top: 0;
+        width: 20vw;
+        
+        
+        
+    }
+    img.shadow {
+        left: 2.2vw;
+        top: 0vw;
+        width: 22vw;;
+    }
+    .phone-block>div {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        vertical-align: middle;
+        width: 25vw;
+        left: 1vw;
+
+        
+    }
+    .phone-block>div>img {
+        position: absolute ;
+        left: 2.4vw;
+        top: 6vw;
+        vertical-align: middle;
+        width: 17.4vw;
+        }
+        .phone-block>img.right-phone {
+        position: absolute ;
+        left: 2.4vw;
+        
+        vertical-align: middle;
+        
+
+    }
+    .phone-block>img.right-shadow {
+        position: absolute ;
+        left: 2.5vw;
+        top: 0.1vw;
+        vertical-align: middle;
+        width: 22vw;
+        
+
+    }
+    div.screen-r img {
+        position: absolute ;
+        left: -4.1vw;
+        top: 12.4vw;
+        vertical-align: middle;
+        width: 30.59vw;
+
+    }
+  
+    section.features {
+        grid-template: repeat(3, auto) / repeat(2, auto);
+        
+    }
+    section.features div:before {
+        padding-top: 100%;
+       
+        float: left;
+    }
+    div.services {
+        height: auto;
+    }
+    .portfolio {
+        
+        height: auto;
+    }
+    .images {
+        padding-top: 19px;
+        display: grid;
+        grid-template: repeat(4, 187fr) / repeat(3, 220fr);
+        gap: 20px;
+        justify-content: center;
+        overflow: hidden;
+        height: auto;
+        grid-template-areas:     "a b c" "e f h" "j k  d" "i l m";*/
+    }
+    .images div {
+        width: auto;
+        height: auto;
+        
+        
+    }    
+    .images div:before {
+        padding-top: 100%;
+        content: "";
+        float: left;
+    }
+    .we {
+        gap: 15px;
+        
+
+    }
+    .we div{
+        width: auto;
+        height: auto;
+    }
+    .we div div.photo {
+        width: auto;
+        height: auto;
+       
+
+        
+    }
+    .we div:before {
+        padding-top: 100%;
+        content: "";
+        float: left;
+       
+        
+        
+        
+    }
+    .we div {
+        width: auto;
+        height: auto;
+    }
+    .we div h3 {
+        width: auto;
+    }
+   
+    section.about-us {
+        width: auto;
+        height: 100%;
+    }
+    div.media {
+        height: 40px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    .forma {
+        height: auto;
+    }
+    .forma p {
+        height: auto;
+    }
+    aside {
+        height: auto;
+    }
+}
+@media (max-width: 768px){
+    nav .navig, .header-bottom {
+        display: none;
+    }
+    nav {
+        display: block;
+        line-height: 20px;
+        
+        height: 30px;
+        padding: 20px 10px 20px 10px;
+    }
+    .sing h1 {
+        text-align: center;
+    }
+   .sing img {
+       display: block;
+       position: absolute;
+   }
+   section.features {
+        grid-template: repeat(6, auto) / repeat(1, auto);
+        
+    }
+   section.features {
+    grid-template: repeat(6, auto);
+    
+    }
+    .images {
+        padding-top: 19px;
+        display: grid;
+        grid-template: repeat(6, 187fr) / repeat(2, 220fr);
+        gap: 14px;
+        justify-content: center;
+        overflow: hidden;
+        height: auto;
+        grid-template-areas:     "a b" "e f" "j k" "l m" "i d" "h c";
+    }
+
+
+
+    .we {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 120vw);
+    }
+
+
+    .pole {
+        width: auto;
+        display: block;
+    }
+
+
+    aside {
+        height: auto;
+        width: auto;
+        display: block;
+    }
+    aside p.cont-info, .info {
+        height: auto;
+        width: auto;
+    }
+
+
+    div.pole-aside {
+        display: block;
+    }
+
+    div.copy {
+        display: none;
+    }
+    footer {
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+
 }
